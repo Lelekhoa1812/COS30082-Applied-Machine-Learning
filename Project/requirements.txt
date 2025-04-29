@@ -1,0 +1,14 @@
+# General CV and embedding support
+opencv-python 
+
+# Facial similarity support
+face_recognition
+
+# Emotion detection extension
+deepface
+
+# Recognition model are tf-keras based
+tf-keras
+
+# Emtotion model are Tensorflow based
+tensorflow==2.12.0
