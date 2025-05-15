@@ -118,7 +118,7 @@ def update_frame():
             name = "Unknown"
             distances = face_recognition.face_distance(known_face_encodings, encoding)
             # Apply static heuristic distance threshold (50%)
-            if len(distances) > 0 and np.min(distances) < 0.8:
+            if len(distances) > 0 and np.min(distances) < 0.5:
                 match = np.argmin(distances)
                 name = known_face_names[match]
             # Crop faces to be saved

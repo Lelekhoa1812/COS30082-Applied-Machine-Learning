@@ -11,4 +11,7 @@ deepface
 tf-keras
 
 # Emtotion model are Tensorflow based
-tensorflow==2.12.0
+tensorflow==2.16.2
+
+# local_binary_pattern based anti-spoof
+skimage
