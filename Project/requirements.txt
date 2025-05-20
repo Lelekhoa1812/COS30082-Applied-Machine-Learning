@@ -1,17 +1,22 @@
-# General CV and embedding support
-opencv-python 
+# Core Computer Vision
+opencv-python==4.5.5.64
+Pillow==7.1.2
+numpy>=1.23
+scikit-image  # For fallback LBP spoofing
 
-# Facial similarity support
-face_recognition
+# Face Detection & Embedding
+mediapipe>=0.10.0
+onnxruntime>=1.17.0
+scikit-learn>=1.3.0  # For cosine similarity matching
 
-# Emotion detection extension
-deepface
-
-# Recognition model are tf-keras based
+# Emotion Detection
+deepface>=0.0.93
+tensorflow==2.16.2
 tf-keras
 
-# Emtotion model are Tensorflow based
-tensorflow==2.16.2
-
-# local_binary_pattern based anti-spoof
-skimage
+# Deep Learning Anti-Spoofing (Silent Face)
+torch==2.2.2
+torchvision==0.17.2
+easydict==1.9
+tensorboardX==2.0
+tqdm==4.31.1
