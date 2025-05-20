@@ -9,7 +9,7 @@
  * Anti-spoofing ................ Silent-Face ensemble (3 tiny CNNs)
  * GUI .......................... Tkinter / ttk with streamlined styling
 ----------------------------------------------------------------------------
- Author :  YOU
+ Author :  Dang Khoa Le
  Date   :  2025-05-20
 ----------------------------------------------------------------------------"""
 
