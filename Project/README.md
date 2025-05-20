@@ -179,7 +179,3 @@ Powered by **DeepFace**, the system classifies emotions such as:
 * [InsightFace/MobileFaceNet](https://github.com/deepinsight/insightface)
 * [Silent-Face Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 * [DeepFace](https://github.com/serengil/deepface)
-
----
-
-Let me know if you'd like this formatted into a markdown file or styled differently (e.g., for GitHub Pages).
