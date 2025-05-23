@@ -1,6 +1,6 @@
 # 🧠 Face Recognition Attendance System
 
-> **A real-time, anti-spoofing facial attendance system** powered by MediaPipe, MobileFaceNet, DeepFace, and Silent-Face CNN ensemble.
+> **A real-time, anti-spoofing facial attendance system** powered by CNN, CascadeClassifier, DeepFace, and Silent-Face CNN ensemble.
 
 ---
 
@@ -8,8 +8,8 @@
 
 | Component            | Method / Library                                                                                           |
 | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Face Detection**   | [MediaPipe](https://google.github.io/mediapipe/)                                                           |
-| **Face Embedding**   | [MobileFaceNet (ONNX)](https://github.com/deepinsight/insightface)                                         |
+| **Face Embedding & Comparision**   | CNN Classifier and Triplet Loss                                                     |                                |
+| **Face Detection Bbox**    |      CascadeClassifier                                                                                     |
 | **Face Matching**    | Cosine similarity                                                                                          |
 | **Emotion Analysis** | [DeepFace](https://github.com/serengil/deepface)                                                           |
 | **Anti-Spoofing**    | [Silent-Face Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) (3-model ensemble) |
@@ -20,14 +20,14 @@
 ## 🧩 System Architecture
 
 ```
-+----------------------+        +----------------+        +-------------------+
-|   Webcam Capture     | ---->  |  MediaPipe      | ---->  | Face Crop & Align |
-+----------------------+        +----------------+        +-------------------+
++----------------------+        +-------------------+        +-------------------+
+|   Webcam Capture     | ---->  | CascadeClassifier | ---->  | Face Crop & Align |
++----------------------+        +-------------------+        +-------------------+
                                                          |
                                                          v
                                          +----------------------------+
-                                         |  MobileFaceNet (ONNX)     |
-                                         |  → 128-D face embedding   |
+                                         | Classifier or              |
+                                         |  Triplet Loss on CNN       |
                                          +----------------------------+
                                                   |
        +------------------------------+           |         +---------------------+
@@ -101,7 +101,6 @@ your_project/
 ├── snapshot/
 ├── project.py
 ├── spoof_detector.py
-├── mobilefacenet.onnx
 ├── requirements.txt
 └── README.md
 ```
