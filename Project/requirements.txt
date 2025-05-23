@@ -5,8 +5,6 @@ numpy>=1.23
 scikit-image  # For fallback LBP spoofing
 
 # Face Detection & Embedding
-mediapipe>=0.10.0
-onnxruntime>=1.17.0
 scikit-learn>=1.3.0  # For cosine similarity matching
 
 # Emotion Detection
@@ -16,6 +14,7 @@ tf-keras
 
 # Deep Learning Anti-Spoofing (Silent Face)
 torch==2.2.2
+#pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 torchvision==0.17.2
 easydict==1.9
 tensorboardX==2.0
