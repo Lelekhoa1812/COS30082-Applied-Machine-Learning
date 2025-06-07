@@ -12,7 +12,7 @@
 | **Face Detection Bbox**    |      CascadeClassifier                                                                                     |
 | **Face Matching**    | Cosine similarity                                                                                          |
 | **Emotion Analysis** | [DeepFace](https://github.com/serengil/deepface)                                                           |
-| **Anti-Spoofing**    | [Silent-Face Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) (3-model ensemble) |
+| **Anti-Spoofing**    | [Silent-Face Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) (2-model ensemble) |
 | **Interface**        | Tkinter + ttk                                                                                              |
 
 ---
@@ -87,9 +87,9 @@ pip install -r requirements.txt
 
 | Model                | Source                                                                                                        |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `mobilefacenet.onnx` | [Download](https://github.com/deepinsight/insightface) or from provided link                                  |
-| `anti_spoof_models`  | Copied from [Silent-Face Repo](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) under `resources/` |
-
+| `Detection trained models` | Access [Drive](https://drive.google.com/drive/folders/1ArFjHS4QRwv_hQB-swminqS-W-PeTfrH?usp=sharing)  |
+| `Emotion detection models`  | Derived from [deepface Repo](https://github.com/serengil/deepface) under `/deepface/models/` |
+| `Anti-spoof models`  | Copied from [Silent-Face Repo](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing) under `resources/` |
 Ensure the following structure:
 
 ```
@@ -135,8 +135,8 @@ your_project/
 
 **Silent-Face Ensemble**:
 
-* Combines 3 lightweight CNNs for robust liveness detection.
-* Runs on CPU in real-time.
+* Combines 2 lightweight CNNs for robust liveness detection.
+* Runs on GPU/CPU in real-time.
 * Prevents spoof attacks using printed photos or screen replays.
 
 ---
@@ -174,7 +174,5 @@ Powered by **DeepFace**, the system classifies emotions such as:
 
 ## 📎 References
 
-* [MediaPipe](https://github.com/google/mediapipe)
-* [InsightFace/MobileFaceNet](https://github.com/deepinsight/insightface)
 * [Silent-Face Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing)
 * [DeepFace](https://github.com/serengil/deepface)

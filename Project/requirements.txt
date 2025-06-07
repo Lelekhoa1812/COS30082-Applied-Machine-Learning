@@ -1,21 +1,21 @@
 # Core Computer Vision
-opencv-python==4.5.5.64
-Pillow==7.1.2
-numpy>=1.23
+opencv-python
+Pillow
+numpy
 scikit-image  # For fallback LBP spoofing
 
 # Face Detection & Embedding
-scikit-learn>=1.3.0  # For cosine similarity matching
+scikit-learn  # For cosine similarity matching
 
 # Emotion Detection
-deepface>=0.0.93
-tensorflow==2.16.2
+deepface
+tensorflow
 tf-keras
 
 # Deep Learning Anti-Spoofing (Silent Face)
-torch==2.2.2
+torch
 #pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-torchvision==0.17.2
-easydict==1.9
-tensorboardX==2.0
-tqdm==4.31.1
+torchvision
+easydict
+tensorboardX
+tqdm
